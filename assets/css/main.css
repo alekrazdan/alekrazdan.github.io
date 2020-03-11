@@ -2720,7 +2720,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background: #e11a2e;
 		color: #d2f2e9;
-		height: 100%;
+		/*height: 100%;*/
 		overflow-y: auto;
 		position: fixed;
 		text-align: center;
@@ -2728,7 +2728,8 @@ input, select, textarea {
 		/*width: 23em;
 		right: 0;*/
 		width: 100%;
-		height: 6vh;
+		/*height: 4vh;*/
+		height: 50px;
 		z-index: 10001;
 	}
 
@@ -2795,7 +2796,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #fff;
 				}
 
 		#header > nav {
@@ -2803,6 +2804,7 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+			/*vertical-align: middle;*/
 
 		}
 
@@ -2811,22 +2813,28 @@ input, select, textarea {
 				/*position: fixed;*/
 				margin: 0;
 				padding: 0;
-
-				padding-left: 1em;
+				overflow-y: hidden;
+				/*padding-left: 1em;*/
 				/*overflow: hidden;
 				background-color: #e11a2e
 				left: 0;
 				top: 0;
 				width: 100%;*/
 				display: flex;
+				height: 50px;
+				/*vertical-align: middle;*/
+				line-height: 50px;
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #black;
+					/*border-top: solid 2px #black;*/
 					display: block;
 					padding: 0; 
 
 					padding-left: 0.5em;
+					/*vertical-align: middle;*/
+
+
 					/*float: left;*/
 				}
 
@@ -2835,11 +2843,18 @@ input, select, textarea {
 						-webkit-transition: none;
 						-ms-transition: none;
 						transition: none;
-						border: 0;
+						/*border: 0;*/
 						color: #ffffff !important;
-						display: block;
-						padding: 1.05em 1em;
+						/*display: block;*/
+						/*padding: 1vh 4vh;*/
+						padding: 17px 30px;
 						text-decoration: none; 
+						letter-spacing: .05em;
+						vertical-align: text-bottom;
+						
+						border-bottom: solid 0px;
+						font-size: 12pt;
+
 						/*display: block;
 						color: white;
 						text-align: center;
@@ -2925,22 +2940,33 @@ input, select, textarea {
 
 			#header {
 				width: 100vw; /*21em; */
-				height: 6vw; */
+				/*height: 6vw; */
 				display: flex;
 				position: fixed;
 				z-index: 10000;
+				height: 50px;
 			}
 
-				#header > nav > ul {
+				#header > nav ul {
 					/*margin-bottom: 0*/
 					padding: 0;
-					display: flex;
+					/*display: flex;*/
+					/*height: 50px;*/
+				
 				}
 
-					#header > nav > ul > li {
-						margin: 0 0.5vw;
-						font-size: 2vh;
+					#header > nav ul li {
+						/*margin: 0 0.5vw;
+						font-size: 2vh;*/
+						
+						/*padding-left: 0.5em;*/
+						font-size: 12pt;
 					}
+
+						#header > nav ul li a {
+							font-size: 12pt;
+							letter-spacing: .05em;
+						}
 
 				#header > header {
 					padding: 0;
@@ -2969,7 +2995,7 @@ input, select, textarea {
 
 			#wrapper {
 				/*padding-right: 21em;*/
-				padding-top: 6vw;
+				/*padding-top: 6vw;*/
 			}
 
 		/* Main */
@@ -3049,6 +3075,7 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				display: block;
 				height: 100%;
+				/*height: auto;*/
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
@@ -3083,6 +3110,7 @@ input, select, textarea {
 					position: relative;
 					right: auto;
 					top: auto;
+					display: block;
 				}
 
 					#header > footer > ul {
@@ -3094,7 +3122,7 @@ input, select, textarea {
 				}
 
 					#header > footer .icons li a {
-						color: #b7eadc;
+						color: #fff;
 					}
 
 				#header > nav {
@@ -3117,6 +3145,7 @@ input, select, textarea {
 					left: 0;
 					top: 0;
 					width: 100%;*/
+					height: 100%;
 				}
 
 					#header > nav ul li {
