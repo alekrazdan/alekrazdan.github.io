@@ -2784,12 +2784,30 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			bottom: 0;
+			/*bottom: 0;
 			left: 0;
-			padding: 2em;
+			padding: 2em;*/
+			/*top: 0;
+			right: 0;*/
 			width: 100%;
-			display: none;
+			display: inline-block;
+			line-height: 50px;
+			position: fixed;
+			/*left: 0.5vw;*/
+			left: 88vw;
+			/*float: right !important;*/
 		}
+
+			#header > footer ul{
+				padding: 0;
+				display: flex;
+			}
+
+				#header > footer ul li{
+					margin: 0 0.5vw;
+					font-size: 2vh;
+					padding: 0px 10px;
+				}
 
 			#header > footer .icons {
 				margin: 0;
@@ -2974,8 +2992,8 @@ input, select, textarea {
 
 				#header > footer {
 					/*padding: 1.5em;*/
-					position: fixed;
-					right: 0.5vw;
+					/*position: fixed;
+					right: 0.5vw;*/
 
 
 				}
@@ -3027,6 +3045,9 @@ input, select, textarea {
 			/*#wrapper {
 				padding-right: 20em;
 			}*/
+			#header > footer{
+				left: 85vw;
+			}
 
 	}
 
